@@ -1,0 +1,85 @@
+<%# Main Container %>
+<main class="container m-3">
+
+  <%# Icon from FontAwesome %>
+  <i class="fa-solid fa-dragon"></i>
+  <i class="fa-solid fa-dragon"></i>
+    <h1>Welcome home, love!</h1>
+  <i class="fa-solid fa-dragon"></i>
+  <i class="fa-solid fa-dragon"></i>
+
+  <%# Link_to rails helper  %>
+  <div class="emmas-card m-3">
+    <p>This is where the magic happens</p>
+    <%= link_to 'Lets go home 🏠', root_path %>
+  </div>
+
+  <%# Bootstrap Card %>
+  <div class="card m-3" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
+    </div>
+  </div>
+
+  <%# Bootstrap Dropdown %>
+  <div class="dropdown m-3">
+    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+      Emmmas Dropdown
+    </a>
+
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+  </div>
+
+  <!-- Button trigger modal -->
+  <button type="button m-3" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Emmas Popup 💥
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">SURPRISE!!!! 🎉</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Bye, love 😘</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <%# Bootstrap Form %>
+  <form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+  <%# Image_tag rails helper  %>
+  <%= image_tag 'logo.png', alt: "red le wagon wagon", class: "rounded" %>
+</main>
